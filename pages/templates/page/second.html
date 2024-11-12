@@ -1,0 +1,11 @@
+{% extends "page/base.html" %}
+{%block content %}
+    <h1>employee</h1>
+    {% for p in products %}
+    <h1>{{p}}</h1>
+    <img src={{p.image.url}} >
+    {% endfor %}
+    
+
+{% endblock content %}
+{% include "page/footer.html" %}

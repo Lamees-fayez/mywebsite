@@ -1,0 +1,14 @@
+{% extends "page/base.html" %}
+{%block content %}
+    <h1>first</h1>
+    {% for p in products %}
+        <h1>Name : {{p.name}}</h1>
+        <h1>Description :{{p.description}}</h1>
+        <h1>Price : {{p.price}}$</h1> 
+        <h1>==========</h1> 
+          
+    {% endfor %}
+   
+      
+{% endblock content %}
+{% include "page/footer.html" %}
